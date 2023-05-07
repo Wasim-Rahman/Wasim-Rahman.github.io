@@ -1,0 +1,248 @@
+/* * {
+    border: solid 1px white;
+} */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom properties */
+
+:root {
+    --ff-primary: "Darker Grotesque", sans-serif;
+
+    --fw-reg: 400;
+    --fw-mid: 500;
+    --fw-bold: 700;
+
+    --clr-transTop: rgba(85, 85, 85, 0.47) 0%;
+    --clr-transBot: rgba(0, 0, 0, 0) 100%;
+    --clr-accent: #318BDE;
+    --clr-font: white;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 3rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1rem;
+    }
+    
+}
+
+
+
+/* General settings */
+
+.underline::after {
+    content: "";
+    display: block;
+    float: left;
+    position: absolute;
+    width: 57.5%;
+    height: 3px;
+    margin: 0em auto 0em;
+    border-radius: 0.1em;
+    background: var(--clr-accent);
+}
+
+body {
+    background: black;
+    background-image: linear-gradient(var(--clr-transTop), var(--clr-transBot));
+    color: var(--clr-font);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+
+}
+
+section {
+    padding: 2.5em 2.5em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    
+}
+
+/* h2::after {
+    content: "";
+    display: block;
+    float: left;
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    margin: .1em auto 0em;
+    background: white;
+    opacity: 0.25;
+} */
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+.intro_text {
+    margin-bottom: .25em;
+}
+
+.intro_text strong {
+    display: block;
+}
+
+.intro_para {
+    margin: 0;
+    margin-top: 1.5em;
+    font-size: var(--fs-h3);
+}
+
+/* Nav */
+
+nav {
+    display: none;
+}
+
+/* Intro section */
+
+/* .intro_para::after {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: white;
+    z-index: 1;
+} */
+
+ .intro_section {
+    position: relative;
+ }
+
+ .intro_para::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 3em auto 0em;
+    background: white;
+    opacity: 0.25;
+}
+
+
+@media (min-width: 600px) {
+    
+    .intro_section {
+        text-align: center;
+    }
+    
+    .intro_section {
+        display: grid;
+        grid-template-areas: 
+            "intro"
+            "img"
+            "intro_text";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro_text {
+        grid-area: intro;
+    }
+
+    .intro_img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+    }
+
+    .intro_para {
+        grid-area: intro_text;
+    }
+
+
+
+}
+
+
+/* Skills section */
+
+
+.heading_skills::after {
+    content: "";
+    display: block;
+    float: left;
+    position: absolute;
+    width: 15%;
+    height: 3px;
+    margin: .1em auto 0em;
+    border-radius: 0.1em;
+    background: var(--clr-accent);
+}
+
+.heading_skills {
+    margin-top: -1em;
+    margin-bottom: 1em;
+
+}
+
+.skills {
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* project section */
+
+
+
+.heading_project::after {
+    content: "";
+    display: block;
+    float: left;
+    position: absolute;
+    width: 23%;
+    height: 3px;
+    margin: .1em auto 0em;
+    border-radius: 0.1em;
+    background: var(--clr-accent);
+}
