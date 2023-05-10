@@ -72,12 +72,6 @@ section {
     text-decoration-color: #318BDE;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    border-radius: 100%;
-    margin-top: 2em;
-}
 
 strong {
     font-weight: var(--fw-bold);
@@ -115,6 +109,14 @@ h3 {
     display: block;
 }
 
+.intro_img{
+    display: block;
+    max-width: 100%;
+    border-radius: 100%;
+    margin-top: 2em;
+}
+
+
 .intro_para {
     text-align: center;
     margin: 0;
@@ -144,27 +146,7 @@ h3 {
     opacity: 0.7;
 }
 
-/* Skills Section */
 
-.skills_section {
-    margin-bottom: -4em;
-}
-
-.skills {
-    margin: 0;
-    display: grid;
-    grid-template-areas: 
-    "skill1 skill2 skill3"
-    "skill4 skill5 skill6"
-    "skill7 skill7 skill9"
-    "skill1 . .";
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
-
-.skills h3 {
-    padding: 1em;
-}
 
 /* Intro section */
 
@@ -177,58 +159,86 @@ h3 {
     .intro_section {
 
         margin: 0;
-        grid-column-gap: 4em;
+        grid-column-gap: 0.5em;
         display: grid;
         grid-template-areas: 
-            "intro img"
-            "intro_text img";
-        grid-template-columns: 50% 125%;
+            "intro_text img"
+            "intro_para intro_para";
+        grid-template-columns: 1fr 1fr;
     }
 
     .intro_text {
-        grid-area: intro;
-        margin-top: 1em;
-        text-align: center;
+        grid-area: intro_text;
+        margin: auto;
+
     }
 
 
     .intro_img {
         grid-area: img;
-        margin-top: 3em;
-        margin-left: 2em;
-        margin-right: 1em;
-        /* min-width: 30%; */
-        max-width: 33%;
+        width: 400px;
+        max-width: 100%;
+        margin: auto;
+
 
     }
 
     .intro_para {
-        grid-area: intro_text;
-        padding: 1em;
+        grid-area: intro_para;
+    }
 
+    .skills_items {
+        margin: auto;
         text-align: center;
     }
 
+    .skills_items h3 {
+        padding: 2em;
+    }
 
 
 }
 
 
 
-/* Skills section */
+/* Skills Section */
 
+.skills_section {
+    margin-bottom: -4em;
+}
 
-.heading_skills {
-    margin-top: -1em;
-    margin-bottom: 1em;
+.skills_items {
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+    "skill1 skill2 skill3"
+    "skill4 skill5 skill6"
+    "skill7 skill7 skill9"
+    "skill1 . .";
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
-.skills {
-    padding: 0;
+
+    /* Skills section Animation */
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
 }
 
+.show {
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
 
+.skills_items h3 {
+    padding: 1em;
+}
 
 
 
