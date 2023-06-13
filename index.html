@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>Dev Wasim's Portfolio</title>
         <meta charset="utf-8">
-        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -12,116 +11,132 @@
         <!-- Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/62b98ee258.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header>
-            <nav class="nav">
-                <img src="./media/images/Monochrome on Transparent.png" alt="">
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Skills</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Projects</a></li>
-                </ul>
-            </nav>
+            <!-- Logo -->
+            <div class="nav_container">
+                <img src="./media/images/Monochrome on Transparent.png" alt="" class="logo">
+                
+                <!-- Navigation -->
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                        <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+                        <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <!-- Introduction -->
         <section class="intro_section">
             <h1 class="intro_text">
-                Hello! My name is <span class="underline"><strong>Wasim Rahman.</strong></span>
             </h1>
             <img src="./media/images/pro photo wasim.png" alt="Professional photo of Wasim" class="intro_img">
             <p class="intro_para">
-                Welcome to my portfolio webpage!<br> I am an aspiring full stack developer and I am thrilled to showcase my skills, projects, and experience in the field of web development. With a passion for creating innovative and user-friendly web applications, I have been working diligently to hone my technical abilities and stay up-to-date with the latest industry trends. Through this portfolio, I hope to provide you with a glimpse into my journey as a developer and demonstrate my commitment to delivering high-quality work. Thank you for visiting and please feel free to explore my site!
+                Welcome to my portfolio webpage!<br> I am an aspiring full stack developer and I am thrilled to showcase my skills, projects, and experience in the field of web development. With a passion for creating innovative and user-friendly web applications, I have been working diligently to hone my technical abilities and stay up-to-date with the latest industry trends. Through this portfolio, I hope to provide you with a glimpse into my journey as a developer and demonstrate my commitment to delivering high-quality work.
             </p> 
         </section>
 
         <!-- Skills -->
-        <section class="skills_section">
+        <section class="skills_section" id="skills">
             <h2 class="heading_skills underline">
                 Skills
             </h2>
             <div class="skills_items">
                 <div class="hidden skills">
                     <h3>HTML</h3>
-    
                 </div>
                 <div class="hidden skills">
                     <h3>CSS</h3>
-    
                 </div>
                 <div class="hidden skills">
                     <h3>Javascript</h3>
-    
                 </div>
                 <div class="hidden skills">
                     <h3>Python</h3>
-    
                 </div>
                 <div class="hidden skills">
                     <h3>React</h3>
-    
                 </div>
                 <div class="hidden skills">
                     <h3>jQuery</h3>
-    
                 </div>
                 <div class="hidden skills">
                     <h3>Boostrap</h3>
-    
                 </div>
                 <div class="hidden skills">
                     <h3>PHP</h3>
-    
                 </div>
                 <div class="hidden skills">
                     <h3>SQL</h3>
-    
                 </div>
                 <div class="skills hidden">
                     <h3>Git</h3>
-            </div>
+                </div>
             </div>
         </section>
 
         <!-- projects -->
-        <section class="projects">
+        <section class="projects_section" id="projects">
             <h2 class="heading_project underline">Projects</h2>
 
             <div class="portfolio">
-                <!-- Project 1 -->
                 <a href="#" class="project_object">
                     <img src="#" alt="" class="project_img">
                 </a>
-                <!-- Project 2 -->
                 <a href="#" class="project_object">
                     <img src="#" alt="" class="project_img">
                 </a>
-                <!-- Project 3 -->
                 <a href="#" class="project_object">
                     <img src="#" alt="" class="project_img">
                 </a>
-                <!-- Project 4 -->
                 <a href="#" class="project_object">
                     <img src="#" alt="" class="project_img">
                 </a>
-
-                <!-- to remove this is temp -->
-                <h2 class="skills hidden">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet nec arcu eget cursus. Aliquam auctor rutrum eleifend. In consectetur dui nulla, et posuere nunc maximus eu. Nulla eu laoreet mauris. In hac habitasse platea dictumst. Aliquam ornare consectetur velit in fringilla. In enim diam, efficitur eu leo sed, pretium suscipit tellus. Ut et sapien sed dui ultrices tincidunt. Donec iaculis eget quam et sollicitudin. Fusce vestibulum sapien ut sapien vehicula, id volutpat augue molestie.
-
-                    Vivamus quis dolor ac ante fermentum ultricies eu non ligula. Nunc ut ante nunc. Cras eros enim, posuere ut ultricies ut, bibendum eget erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut ligula dui, molestie vitae sapien vitae, fringilla dapibus dolor. Cras pharetra suscipit tincidunt. Vestibulum metus ex, interdum sit amet finibus et, semper id enim. Sed lorem elit, ornare sit amet pretium eget, ultricies vitae massa. Donec lectus eros, sagittis non velit ut, luctus tristique erat. In interdum tellus eget magna ullamcorper condimentum. Vivamus tincidunt, est in blandit tristique, dui felis facilisis elit, et suscipit massa nisi at metus. Donec egestas enim blandit, tempus odio eget, tincidunt quam. Mauris congue, enim viverra convallis vehicula, dui lorem porttitor sapien, ut scelerisque dui diam et nisl. Praesent eu dignissim nisl. Cras a viverra nisi. Suspendisse ante est, porttitor ac tincidunt eu, congue in orci.
-
-                    Nunc sit amet metus id ante cursus euismod at nec mauris. Integer maximus quis sapien in fringilla. In feugiat, est a maximus scelerisque, odio massa feugiat tortor, vel convallis leo sapien quis lorem. Integer iaculis neque id ligula sodales rutrum. Aenean sollicitudin ligula a tellus condimentum gravida. Proin at ipsum pulvinar lorem sagittis aliquam sed in lorem. Nunc eu metus augue. Proin egestas orci at ultricies tincidunt. Vivamus gravida turpis lacus, vitae tempus nisi semper eu. Integer vel semper ipsum. Nullam volutpat euismod enim, sed pulvinar augue suscipit non. Vivamus facilisis, eros vitae sodales ultrices, ligula tellus dapibus est, nec maximus dui elit in tellus. Cras ac dui sed velit sollicitudin sodales.
-
-                    Vestibulum ac purus vel est viverra vestibulum in sed libero. Nulla eget dolor felis. Etiam aliquam, ante tempus efficitur maximus, tortor leo porttitor ante, quis congue lacus mauris eu elit. Suspendisse mattis, quam sed tristique iaculis, tellus felis aliquet orci, in rhoncus diam lacus eget felis. Aenean ornare ex et elit pharetra, eget efficitur elit tristique. Praesent massa justo, facilisis ac dolor et, blandit aliquam lorem. Integer dui turpis, volutpat ut auctor ut, bibendum ut urna. Curabitur lacus lorem, suscipit ut sagittis eget, sollicitudin sed nulla. Nam gravida laoreet metus sit amet vestibulum. Morbi elementum dolor a magna volutpat faucibus.
-
-                    Vestibulum elementum ultrices pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi semper nisi magna, ac dictum orci venenatis sed. Aenean enim risus, congue ut rhoncus in, consequat nec eros. Nunc luctus augue mi, ut volutpat est placerat et. Nullam fermentum placerat euismod. Duis quam magna, bibendum nec eleifend nec, feugiat nec leo. Ut laoreet blandit ultricies. Etiam ut lacus quam. Duis convallis ultricies ante, in semper ex mattis eget. Duis non felis eget arcu sodales condimentum. Nunc pharetra sem neque, id porttitor metus condimentum sed. Nam ultrices nulla ligula, convallis venenatis eros porttitor ac. In a efficitur tortor.
-                </h2>
-            </div>
         </section>
 
+        <!-- contact -->
+        <section class="contact" id="contact">
+            <h2 class="heading_contact underline">Contact</h2>
+            <div class="flex">
+                <p class="contact_text">
+                    Thank you for visiting my portfolio page, I would be delighted to hear more about your inquiry or collaboration opportunities. Please feel free to reach out to me using the form. <br>Looking forward to connecting with you!
+                </p>
+                <form action="" class="contact_submit">
+                    <div class="contact_control">
+                        <label class="visually-hidden" for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="contact_control">
+                        <label class="visually-hidden" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    <div class="contact_control">
+                        <label class="visually-hidden" for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="5" required></textarea>
+                    </div>
+                </div>
+                <div class="contact_control">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <div class="flex_footer">
+                <a href="https://github.com/Wasim-Rahman" target="_blank">
+                    <h2><i class="fa-brands fa-github" style="color: #ffffff;"></i></h2>
+                </a>
+                <a href="" target="_blank">
+                    <h2><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></h2>
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
